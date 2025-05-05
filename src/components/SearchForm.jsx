@@ -1,24 +1,26 @@
 import React from 'react'
 
-function SearchForm({ keyword, setKeyword, onSearch }) {
-    return (
-      <form onSubmit={onSearch} className="flex mb-6">
-        <input
-          type="text"
-          value={keyword}
-          onChange={(e) => setKeyword(e.target.value)}
-          placeholder="Search for images..."
-          className="border-2 border-gray-300 rounded-l-lg p-2 w-64 focus:outline-none placeholder:text-white placeholder:text-lg text-xl"
-        />
-        <button
-          type="submit"
-          className="bg-white/90 text-pink-600 px-4 py-2 rounded-r-lg hover:bg-white hover:text-pink-700 border-none font-semibold transition"
-        >
-          Search
-        </button>
-      </form>
-    );
+function SearchForm({onSearch}) {
+
+  const handleSubmit =(e) => {
+    e.preventDefault();
+    const keyword = e.target.elements.searchInput.value;
+    onSearch(keyword)
   }
+
+ return(
+  <div>
+    <form onSubmit={handleSubmit} className='flex gap-2'>
+      <input type="text"
+      name='searchInput'
+      placeholder='Explore World...'
+      className='md:py-2 py-0 border border-gray-200 px-4 md:px-8 w-full rounded-lg text-white md:text-xl text-lg outline-none'
+      />
+      <button type='submit' className='border border-blue-600 bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg text-lg font-semibold'>Search</button>
+    </form>
+  </div>
+ )
+};
   
   export default SearchForm;
   
