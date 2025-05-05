@@ -5,7 +5,7 @@ function SearchForm({onSearch}) {
   const handleSubmit =(e) => {
     e.preventDefault();
     const keyword = e.target.elements.searchInput.value;
-    onSearch(keyword)
+    onSearch(keyword);
   }
 
  return(
