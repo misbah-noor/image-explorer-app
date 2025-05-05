@@ -1,12 +1,29 @@
-# React + Vite
+# 📸 Image Search App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A mobile-friendly React app that lets users search and view images using the Unsplash API.
 
-Currently, two official plugins are available:
+How does this project work:
+- Make API calls using fetch and async/await
+- Handle API responses and update UI dynamically
+- Build a modular React app with reusable components
+- Use Tailwind CSS for responsive design
+- Manage state for pagination (loading more images)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📚 Key Features
+- *Search images by keyword*: Enter a keyword and get related images from Unsplash.
+- *Responsive image grid*: Displays images in a flexible grid that works on mobile and desktop.
+- *Show more button*: Load additional images without replacing the previous ones.
+- *Click to view*: Click an image to open it on Unsplash in a new tab.
 
-## Expanding the ESLint configuration
+## 🛠 Technologies Used
+- React (with Vite)
+- Tailwind CSS
+- Unsplash API (REST)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Live Demo
+https://image-explorer-app-ten.vercel.app
+
+## How to Run Locally
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/misbah-noor/image-explorer-app.git
